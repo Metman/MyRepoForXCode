@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="NewsListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z84-OC-9Rf"/>
+                    <view alpha="0.59999999999999998" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="raN-in-H3m" customClass="GradientView">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Это очень большой заголовок, который на 3 строки " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80b-8N-fbg">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.85882352939999995" green="0.82352941180000006" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX0-ER-2kZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eX0-ER-2kZ" secondAttribute="bottom" constant="2" id="JZj-yT-h1e"/>
+                            <constraint firstItem="eX0-ER-2kZ" firstAttribute="leading" secondItem="80b-8N-fbg" secondAttribute="trailing" constant="42" id="dFK-o8-593"/>
+                            <constraint firstAttribute="bottom" secondItem="80b-8N-fbg" secondAttribute="bottom" constant="4" id="kGW-LN-qcr"/>
+                            <constraint firstItem="80b-8N-fbg" firstAttribute="leading" secondItem="raN-in-H3m" secondAttribute="leading" id="mmF-y1-7EF"/>
+                            <constraint firstAttribute="trailing" secondItem="eX0-ER-2kZ" secondAttribute="trailing" constant="7.5" id="t2V-Gn-bCa"/>
+                            <constraint firstItem="80b-8N-fbg" firstAttribute="top" secondItem="raN-in-H3m" secondAttribute="top" id="txC-n6-eRA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="z84-OC-9Rf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0KA-Em-SPH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="raN-in-H3m" secondAttribute="bottom" constant="-7.5" id="3Hs-SR-you"/>
+                    <constraint firstItem="z84-OC-9Rf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="3v4-yJ-uuw"/>
+                    <constraint firstItem="z84-OC-9Rf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8b6-8E-TlJ"/>
+                    <constraint firstItem="raN-in-H3m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Az6-Bl-uQ0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="z84-OC-9Rf" secondAttribute="bottom" constant="-8.5" id="HZC-Ma-uTA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="raN-in-H3m" secondAttribute="trailing" constant="-8" id="HyD-ut-qae"/>
+                    <constraint firstItem="z84-OC-9Rf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="axW-yN-iEa"/>
+                    <constraint firstAttribute="trailing" secondItem="z84-OC-9Rf" secondAttribute="trailing" id="fL9-sc-MUu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="z84-OC-9Rf" secondAttribute="trailing" constant="-8" id="swy-jC-pNh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="raN-in-H3m" secondAttribute="bottom" constant="-7.5" id="tOi-Q2-nqg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="bgImage" destination="z84-OC-9Rf" id="Dgf-qZ-Fqm"/>
+                <outlet property="datenewsLabel" destination="eX0-ER-2kZ" id="wMg-bU-GeW"/>
+                <outlet property="newsTitleLabel" destination="80b-8N-fbg" id="sW9-Pz-Ans"/>
+            </connections>
+            <point key="canvasLocation" x="-54" y="-113"/>
+        </tableViewCell>
+    </objects>
+</document>
