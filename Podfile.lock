@@ -1,12 +1,29 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - GradientView (2.1.1)
 
 DEPENDENCIES:
+  - AFNetworking
   - GradientView
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   GradientView: 8e1295d3614a8b55f4a4b8c95529b0748d154c84
 
-PODFILE CHECKSUM: 1d1d5cd1f8fdc3d093415e2e16b324a2ece0e972
+PODFILE CHECKSUM: 2762176b7de1397db35f2d0183dfa49c51a593ee
 
 COCOAPODS: 1.1.0.rc.1

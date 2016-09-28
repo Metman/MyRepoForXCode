@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'News' do
   pod 'GradientView'
+  pod 'AFNetworking'
 end
