@@ -75,6 +75,22 @@
 }
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main"
+                                                          bundle:nil];
+    
+    NewsDetailTableViewController *viewController = (NewsDetailTableViewController *)[storyboard
+                                                                                   instantiateViewControllerWithIdentifier:NSStringFromClass([NewsDetailTableViewController class])];
+    
+//    NewsDetailTableViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"detailView"];
+    [self.navigationController pushViewController:viewController animated:YES];
+    
+    NSLog(@"Cell selected");
+    
+    
+    
+}
 
 #pragma mark - Table view data source
 

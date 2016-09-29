@@ -48,18 +48,6 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  
-    
-        
-        NewsDetailTableViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"detailView"];
-        [self.navigationController pushViewController:controller animated:YES];
-     
-        NSLog(@"Cell selected");
-   
-    
-    
-    }
 
 /*
 // Override to support editing the table view.

@@ -14,6 +14,6 @@
 
 @interface NewsListTableViewController : UITableViewController
 
-@property(nonatomic,strong) NewsListDataSource* newsListDatasourceDelegate;
+@property(nonatomic,strong) NewsListDataSource *newsListDatasourceDelegate;
 
 @end
