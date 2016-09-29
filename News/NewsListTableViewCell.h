@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "NewsItem.h"
 #import <GradientView/GradientView.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface NewsListTableViewCell : UITableViewCell
 
 @property (nonatomic, weak) NewsItem *newsItem;
 @property(nonatomic, weak) IBOutlet UIImageView *bgImage;
-@property(nonatomic,weak) IBOutlet UILabel *newsSubtitleLabel;
 @property(nonatomic,weak) IBOutlet UILabel *newsTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *datenewsLabel;
 

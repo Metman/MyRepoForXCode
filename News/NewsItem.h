@@ -13,7 +13,7 @@
 
 @property(nonatomic,strong) NSString *title;
 @property(nonatomic,strong) NSString *text;
-@property(nonatomic,strong) UIImage *image;
+@property(nonatomic,strong) NSURL *imageURL;
 @property(nonatomic, strong) NSString *date;
 
 @end

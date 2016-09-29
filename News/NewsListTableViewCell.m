@@ -23,12 +23,17 @@
     // Configure the view for the selected state
 }
 
+
+
 -(void) setNewsItem:(NewsItem *)newsItem {
-   
-    [_bgImage setImage:newsItem.image];
-    [_newsTitleLabel setText:newsItem.title];
     
-    [_newsSubtitleLabel setText:newsItem.text];
+    
+//    [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:newsItem.imageURL parameters:parameters error:nil];
+    
+//    UIImage *imageData = [UIImage imageWithContentsOfFile:newsItem.imageURL];
+    
+    [_bgImage setImageWithURL:newsItem.imageURL];
+    [_newsTitleLabel setText:newsItem.title];
     [_datenewsLabel setText:newsItem.date];
     
 
