@@ -9,7 +9,7 @@
         <!--Новости-->
         <scene sceneID="J7K-L2-83D">
             <objects>
-                <tableViewController id="8bo-Gh-lOd" customClass="NewsListTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="mainView" id="8bo-Gh-lOd" customClass="NewsListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="8WG-Wo-2dd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -26,12 +26,40 @@
             </objects>
             <point key="canvasLocation" x="1128.8" y="169.56521739130437"/>
         </scene>
+        <!--News Detail Table View Controller-->
+        <scene sceneID="mK4-Ir-qGt">
+            <objects>
+                <tableViewController storyboardIdentifier="detailView" id="AEe-rF-3oO" customClass="NewsDetailTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="q4y-JQ-3Ro">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oe4-Pj-db4">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oe4-Pj-db4" id="EGr-RT-yFP">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AEe-rF-3oO" id="siV-Fh-xY3"/>
+                            <outlet property="delegate" destination="AEe-rF-3oO" id="zD5-D6-lR7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3l-f9-RJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847" y="170"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="n11-nC-v37">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EO0-Wf-v17" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="blackTranslucent" id="5Oi-bB-BOR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="5Oi-bB-BOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.89315658807754517" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
