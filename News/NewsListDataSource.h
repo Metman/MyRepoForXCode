@@ -9,12 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "NewsItem.h"
-#import "NewsListTableViewController.h"
+
 #import "NewsListTableViewCell.h"
-#import "NewsDetailTableViewController.h"
+
+
 
 @interface NewsListDataSource : NSObject <UITableViewDelegate, UITableViewDataSource>
 
-@property(nonatomic, strong) UINavigationController *navigationController;
+@property(nonatomic, strong) UIViewController *otherVC;
+
+@property(nonatomic,strong) UIViewController *detailVC;
+
 
 @end

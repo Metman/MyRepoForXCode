@@ -16,6 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    _DetailNewsDatasource = [NewsListTableViewController new];
+//    self.tableView.delegate =  _DetailNewsDatasource;
+//    self.tableView.dataSource = _DetailNewsDatasource;
+    _DetailNewsDatasource = [NewsListDataSource new];
+    _DetailNewsDatasource.detailVC = self;
+    self.tableView.delegate = _DetailNewsDatasource;
+    self.tableView.dataSource = _DetailNewsDatasource;
+    
+    
+    NSString *nibName = NSStringFromClass([DetailNewsTableViewCell class]);
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+    
+    [self.tableView registerNib:nib forCellReuseIdentifier:nibName];
+    
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

@@ -21,6 +21,7 @@
     _newsListDatasourceDelegate = [NewsListDataSource new];
     self.tableView.delegate = _newsListDatasourceDelegate;
     self.tableView.dataSource = _newsListDatasourceDelegate;
+    _newsListDatasourceDelegate.otherVC = self;
     
     NSString *nibName = NSStringFromClass([NewsListTableViewCell class]);
     

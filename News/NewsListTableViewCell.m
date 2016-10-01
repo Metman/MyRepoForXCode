@@ -27,11 +27,6 @@
 
 -(void) setNewsItem:(NewsItem *)newsItem {
     
-    
-//    [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:newsItem.imageURL parameters:parameters error:nil];
-    
-//    UIImage *imageData = [UIImage imageWithContentsOfFile:newsItem.imageURL];
-    
     [_bgImage setImageWithURL:newsItem.imageURL];
     [_newsTitleLabel setText:newsItem.title];
     [_datenewsLabel setText:newsItem.date];

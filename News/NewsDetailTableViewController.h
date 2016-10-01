@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NewsListDataSource.h"
+#import "DetailNewsTableViewCell.h"
 @interface NewsDetailTableViewController : UITableViewController
+@property(nonatomic,strong) NewsListDataSource* DetailNewsDatasource;
 
 @end

@@ -80,11 +80,13 @@
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main"
                                                           bundle:nil];
     
-    NewsDetailTableViewController *viewController = (NewsDetailTableViewController *)[storyboard
-                                                                                   instantiateViewControllerWithIdentifier:NSStringFromClass([NewsDetailTableViewController class])];
     
-//    NewsDetailTableViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"detailView"];
-    [self.navigationController pushViewController:viewController animated:YES];
+//    NewsDetailTableViewController *viewController = (NewsDetailTableViewController *)[storyboard
+//                                                                        instantiateViewControllerWithIdentifier:NSStringFromClass([NewsDetailTableViewController class])];
+    
+    UIViewController *myVC = [storyboard instantiateViewControllerWithIdentifier:@"NewsDetailTableViewController"];
+    
+    [_otherVC.navigationController pushViewController:myVC animated:YES];
     
     NSLog(@"Cell selected");
     

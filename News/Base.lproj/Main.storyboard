@@ -9,7 +9,7 @@
         <!--Новости-->
         <scene sceneID="J7K-L2-83D">
             <objects>
-                <tableViewController storyboardIdentifier="mainView" id="8bo-Gh-lOd" customClass="NewsListTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NewsListTableViewController" id="8bo-Gh-lOd" customClass="NewsListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="8WG-Wo-2dd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -29,21 +29,11 @@
         <!--News Detail Table View Controller-->
         <scene sceneID="mK4-Ir-qGt">
             <objects>
-                <tableViewController storyboardIdentifier="detailView" id="AEe-rF-3oO" customClass="NewsDetailTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NewsDetailTableViewController" id="AEe-rF-3oO" customClass="NewsDetailTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="q4y-JQ-3Ro">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oe4-Pj-db4">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oe4-Pj-db4" id="EGr-RT-yFP">
-                                    <frame key="frameInset" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="AEe-rF-3oO" id="siV-Fh-xY3"/>
                             <outlet property="delegate" destination="AEe-rF-3oO" id="zD5-D6-lR7"/>
