@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "NewsItem.h"
-#import <GradientView/GradientView.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface NewsListTableViewCell : UITableViewCell
