@@ -8,6 +8,7 @@
 
 
 #import "NewsListDataSource.h"
+#import "NewsDetailTableViewController.h"
 
 @interface NewsListDataSource()
 
@@ -84,7 +85,7 @@
 //    NewsDetailTableViewController *viewController = (NewsDetailTableViewController *)[storyboard
 //                                                                        instantiateViewControllerWithIdentifier:NSStringFromClass([NewsDetailTableViewController class])];
     
-    UIViewController *myVC = [storyboard instantiateViewControllerWithIdentifier:@"NewsDetailTableViewController"];
+    UIViewController *myVC = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([NewsDetailTableViewController class])];
     
     [_otherVC.navigationController pushViewController:myVC animated:YES];
     
