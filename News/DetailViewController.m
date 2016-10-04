@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    _detailLabel.text = self.newsItemDetail.text;
     
     // Do any additional setup after loading the view.
 }

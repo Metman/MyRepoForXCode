@@ -84,7 +84,10 @@
     
     DetailViewController *viewController = (DetailViewController *)[storyboard
                                                                         instantiateViewControllerWithIdentifier:NSStringFromClass([DetailViewController class])];
+    
+    
 
+    viewController.newsItemDetail = _newsItemArray;
     
     [_otherVC.navigationController pushViewController:viewController animated:YES];
 
