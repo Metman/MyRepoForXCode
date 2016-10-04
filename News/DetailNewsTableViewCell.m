@@ -8,6 +8,7 @@
 
 #import "DetailNewsTableViewCell.h"
 
+
 @implementation DetailNewsTableViewCell
 
 - (void)awakeFromNib {
@@ -20,5 +21,12 @@
 
     // Configure the view for the selected state
 }
+
+-(void) setNewsItemForCell:(NewsItem *)newsItemForCell {
+
+    [_detailLabel setText:newsItemForCell.text];
+
+}
+
 
 @end

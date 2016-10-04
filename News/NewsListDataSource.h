@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "NewsItem.h"
-
+#import "DetailViewController.h"
 #import "NewsListTableViewCell.h"
+#import "DetailNewsTableViewCell.h"
 
 
 
@@ -18,7 +19,6 @@
 
 @property(nonatomic, strong) UIViewController *otherVC;
 
-@property(nonatomic,strong) UIViewController *detailVC;
 
 
 @end

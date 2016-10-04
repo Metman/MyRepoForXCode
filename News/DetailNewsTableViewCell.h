@@ -12,6 +12,8 @@
 
 @interface DetailNewsTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (weak,nonatomic) NewsItem *newsItemForCell;
 
 
 @end

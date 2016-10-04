@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,23 +27,39 @@
             </objects>
             <point key="canvasLocation" x="1128.8" y="169.56521739130437"/>
         </scene>
-        <!--News Detail Table View Controller-->
-        <scene sceneID="mK4-Ir-qGt">
+        <!--Detail View Controller-->
+        <scene sceneID="261-il-eIV">
             <objects>
-                <tableViewController storyboardIdentifier="NewsDetailTableViewController" id="AEe-rF-3oO" customClass="NewsDetailTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="q4y-JQ-3Ro">
+                <viewController storyboardIdentifier="DetailViewController" id="Si3-dW-cjj" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="md7-Tt-uES"/>
+                        <viewControllerLayoutGuide type="bottom" id="6P8-gh-ASS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lbm-pF-RAl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-3K-Dch">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="AEe-rF-3oO" id="siV-Fh-xY3"/>
-                            <outlet property="delegate" destination="AEe-rF-3oO" id="zD5-D6-lR7"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c3l-f9-RJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="vpe-3K-Dch" firstAttribute="bottom" secondItem="6P8-gh-ASS" secondAttribute="top" id="7ic-F4-dRN"/>
+                            <constraint firstItem="vpe-3K-Dch" firstAttribute="top" secondItem="md7-Tt-uES" secondAttribute="bottom" id="Yob-6v-3fs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vpe-3K-Dch" secondAttribute="trailing" constant="-16" id="lKL-Yd-thj"/>
+                            <constraint firstItem="vpe-3K-Dch" firstAttribute="leading" secondItem="lbm-pF-RAl" secondAttribute="leadingMargin" constant="-16" id="mlW-fH-lW1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="vpe-3K-Dch" id="eKG-h0-ck2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PsI-ib-SsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847" y="170"/>
+            <point key="canvasLocation" x="1820" y="170.46476761619192"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n11-nC-v37">

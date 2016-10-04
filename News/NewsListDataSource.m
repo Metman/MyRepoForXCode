@@ -8,7 +8,7 @@
 
 
 #import "NewsListDataSource.h"
-#import "NewsDetailTableViewController.h"
+
 
 @interface NewsListDataSource()
 
@@ -82,12 +82,12 @@
                                                           bundle:nil];
     
     
-//    NewsDetailTableViewController *viewController = (NewsDetailTableViewController *)[storyboard
-//                                                                        instantiateViewControllerWithIdentifier:NSStringFromClass([NewsDetailTableViewController class])];
+    DetailViewController *viewController = (DetailViewController *)[storyboard
+                                                                        instantiateViewControllerWithIdentifier:NSStringFromClass([DetailViewController class])];
+
     
-    UIViewController *myVC = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([NewsDetailTableViewController class])];
-    
-    [_otherVC.navigationController pushViewController:myVC animated:YES];
+    [_otherVC.navigationController pushViewController:viewController animated:YES];
+
     
     NSLog(@"Cell selected");
     
