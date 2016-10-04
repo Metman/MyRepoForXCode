@@ -87,8 +87,7 @@
     
     
 
-    viewController.newsItemDetail = _newsItemArray;
-    
+    viewController.newsItemDetail = _newsItemArray[indexPath.row];
     [_otherVC.navigationController pushViewController:viewController animated:YES];
 
     
