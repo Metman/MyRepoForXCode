@@ -10,7 +10,7 @@
 #import "NewsItem.h"
 #import "NewsListDataSource.h"
 #import "NewsListTableViewCell.h"
-#import "DetailViewController.h"
+#import "DetailTableViewController.h"
 
 @interface NewsListTableViewController : UITableViewController
 
