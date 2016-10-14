@@ -1,14 +1,14 @@
 //
-//  DetailTableViewCell.m
-//  
+//  ImageTableViewCell.m
+//  News
 //
-//  Created by Максим Филимонов on 11.10.16.
-//
+//  Created by Максим Филимонов on 14.10.16.
+//  Copyright © 2016 Максим Филимонов. All rights reserved.
 //
 
-#import "DetailTableViewCell.h"
+#import "ImageTableViewCell.h"
 
-@implementation DetailTableViewCell
+@implementation ImageTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -20,7 +20,5 @@
 
     // Configure the view for the selected state
 }
-
-
 
 @end

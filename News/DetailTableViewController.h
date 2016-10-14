@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NewsItem.h"
 #import "DetailTableViewCell.h"
+#import "ImageTableViewCell.h"
 
 @interface DetailTableViewController : UITableViewController
 @property(nonatomic,strong) NewsItem *newsItemDetail;
