@@ -42,7 +42,6 @@
 }
 
 
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -78,7 +77,8 @@
     
         ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableCellWithImage forIndexPath:indexPath];
        
-        [cell.imageNews setImageWithURL:_newsItemDetail.imageURL];
+        cell.collectionViewImages.itemNewsCell = _newsItemDetail.arrayWithImagesURL[indexPath.row];
+        
         
         return cell;
 

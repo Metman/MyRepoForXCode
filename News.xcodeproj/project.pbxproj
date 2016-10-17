@@ -12,6 +12,9 @@
 		000694551DAD716B00ECA020 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000694541DAD716B00ECA020 /* DetailTableViewCell.xib */; };
 		003F38711D94359800D593BD /* NewsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 003F386F1D94359800D593BD /* NewsListTableViewCell.m */; };
 		003F38721D94359800D593BD /* NewsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003F38701D94359800D593BD /* NewsListTableViewCell.xib */; };
+		00493C5E1DB2B46B004DF474 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00493C5D1DB2B46B004DF474 /* CollectionView.m */; };
+		00493C671DB2B5F3004DF474 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00493C651DB2B5F3004DF474 /* MyCollectionViewCell.m */; };
+		00493C681DB2B5F3004DF474 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00493C661DB2B5F3004DF474 /* MyCollectionViewCell.xib */; };
 		00602A891D92B95B0023BE9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00602A881D92B95B0023BE9A /* main.m */; };
 		00602A8C1D92B95B0023BE9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00602A8B1D92B95B0023BE9A /* AppDelegate.m */; };
 		00602A921D92B95B0023BE9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00602A901D92B95B0023BE9A /* Main.storyboard */; };
@@ -34,6 +37,11 @@
 		003F386E1D94359800D593BD /* NewsListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListTableViewCell.h; sourceTree = "<group>"; };
 		003F386F1D94359800D593BD /* NewsListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListTableViewCell.m; sourceTree = "<group>"; };
 		003F38701D94359800D593BD /* NewsListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsListTableViewCell.xib; sourceTree = "<group>"; };
+		00493C5C1DB2B46B004DF474 /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		00493C5D1DB2B46B004DF474 /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		00493C641DB2B5F3004DF474 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		00493C651DB2B5F3004DF474 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		00493C661DB2B5F3004DF474 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		00602A841D92B95B0023BE9A /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00602A881D92B95B0023BE9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00602A8A1D92B95B0023BE9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +116,11 @@
 				0095D70A1DB120D7005FD78C /* ImageTableViewCell.h */,
 				0095D70B1DB120D7005FD78C /* ImageTableViewCell.m */,
 				0095D70C1DB120D7005FD78C /* ImageTableViewCell.xib */,
+				00493C5C1DB2B46B004DF474 /* CollectionView.h */,
+				00493C5D1DB2B46B004DF474 /* CollectionView.m */,
+				00493C641DB2B5F3004DF474 /* MyCollectionViewCell.h */,
+				00493C651DB2B5F3004DF474 /* MyCollectionViewCell.m */,
+				00493C661DB2B5F3004DF474 /* MyCollectionViewCell.xib */,
 				00602A901D92B95B0023BE9A /* Main.storyboard */,
 				00602A931D92B95B0023BE9A /* Assets.xcassets */,
 				00602A951D92B95B0023BE9A /* LaunchScreen.storyboard */,
@@ -214,6 +227,7 @@
 				00602A941D92B95B0023BE9A /* Assets.xcassets in Resources */,
 				0095D70E1DB120D7005FD78C /* ImageTableViewCell.xib in Resources */,
 				003F38721D94359800D593BD /* NewsListTableViewCell.xib in Resources */,
+				00493C681DB2B5F3004DF474 /* MyCollectionViewCell.xib in Resources */,
 				00602A921D92B95B0023BE9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +349,8 @@
 			files = (
 				00051B361DAD61C70015F237 /* DetailTableViewController.m in Sources */,
 				00602A8C1D92B95B0023BE9A /* AppDelegate.m in Sources */,
+				00493C671DB2B5F3004DF474 /* MyCollectionViewCell.m in Sources */,
+				00493C5E1DB2B46B004DF474 /* CollectionView.m in Sources */,
 				00959BB51D93E6F4001B1391 /* NewsItem.m in Sources */,
 				003F38711D94359800D593BD /* NewsListTableViewCell.m in Sources */,
 				0095D70D1DB120D7005FD78C /* ImageTableViewCell.m in Sources */,

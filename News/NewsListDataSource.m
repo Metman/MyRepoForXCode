@@ -36,6 +36,15 @@
             newsItem.text = @"Джон Керри заявил, что у него возникло чувство «параллельной реальности» во время речи Сергея Лаврова, посвященной ситуации в Сирии. Противоречия России и США обострились после обстрела гуманитарного конвоя в провинции Алеппо 19 сентября.";
             newsItem.imageURL = [NSURL URLWithString:@"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
             newsItem.date = @"Сегодня, 10:00";
+            
+            NSURL *imageURL = [NSURL URLWithString:
+                               @"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
+            
+            NSURL *otherImageURL = [NSURL URLWithString:
+                                    @"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg"];
+            
+            newsItem.arrayWithImagesURL = [NSMutableArray arrayWithObjects:imageURL,otherImageURL, nil];
+            
             [_newsItemArray addObject:newsItem];
         }
         
@@ -45,6 +54,16 @@
             newsItem.text = @"Один из самых известных ньюсмейкеров по линии силовых ведомств России, официальный представитель Следственного комитета Владимир Маркин подал заявление об отставке.";
             newsItem.imageURL = [NSURL URLWithString:@"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg"];
             newsItem.date = @"27.9.16, 10:00";
+            
+            NSURL *imageURL = [NSURL URLWithString:
+                               @"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
+            
+            NSURL *otherImageURL = [NSURL URLWithString:
+                                    @"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg"];
+            
+            newsItem.arrayWithImagesURL = [NSMutableArray arrayWithObjects:imageURL,otherImageURL, nil];
+
+            
             [_newsItemArray addObject:newsItem];
         }
         
@@ -55,6 +74,15 @@
             newsItem.text = @"По подсчетам IHS Markit, все компоненты iPhone 7 с 32 ГБ флэш-памяти стоят $219,80. Добавив расходы на за сборку, оцениваемые в $5, аналитики пришли к выводу, что выпуск одного экземпляра iPhone 7 обходится Apple в $224,80.";
                         newsItem.date = @"26.9.16, 10:00";
             newsItem.imageURL = [NSURL URLWithString:@"https://pp.vk.me/c636021/v636021281/2f8bf/YRldZxMSRUo.jpg"];
+            
+            NSURL *imageURL = [NSURL URLWithString:
+                               @"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
+            
+            NSURL *otherImageURL = [NSURL URLWithString:
+                                    @"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg"];
+            
+            newsItem.arrayWithImagesURL = [NSMutableArray arrayWithObjects:imageURL,otherImageURL, nil];
+
             [_newsItemArray addObject:newsItem];
         }
         
@@ -66,6 +94,16 @@
             
             newsItem.date = @"25.9.16, 10:00";
             newsItem.imageURL = [NSURL URLWithString:@"https://pp.vk.me/c637217/v637217813/11eb7/0mhstEDvkPk.jpg"];
+            
+            NSURL *imageURL = [NSURL URLWithString:
+                               @"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
+            
+            NSURL *otherImageURL = [NSURL URLWithString:
+                                    @"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg"];
+            
+            newsItem.arrayWithImagesURL = [NSMutableArray arrayWithObjects:imageURL,otherImageURL, nil];
+
+            
             [_newsItemArray addObject:newsItem];
         }
 

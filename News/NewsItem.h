@@ -15,5 +15,5 @@
 @property(nonatomic,strong) NSString *text;
 @property(nonatomic,strong) NSURL *imageURL;
 @property(nonatomic, strong) NSString *date;
-
+@property(nonatomic,strong) NSMutableArray *arrayWithImagesURL;
 @end

@@ -13,24 +13,31 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="199"/>
+                <frame key="frameInset" width="320" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iwa-Bh-3r2">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ula-m5-9cz" customClass="CollectionView">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="200" id="sR2-fk-MgL"/>
+                            <constraint firstAttribute="height" constant="200" id="ETn-7h-ol2"/>
                         </constraints>
-                    </imageView>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rZl-fS-feM">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="Iwa-Bh-3r2" secondAttribute="bottom" constant="-9" id="0jq-az-0r4"/>
-                    <constraint firstItem="Iwa-Bh-3r2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="LEv-bY-HqC"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Iwa-Bh-3r2" secondAttribute="trailing" constant="-8" id="g8h-u4-cAX"/>
-                    <constraint firstItem="Iwa-Bh-3r2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="klw-x5-vGW"/>
+                    <constraint firstItem="Ula-m5-9cz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="9vx-4j-d77"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ula-m5-9cz" secondAttribute="bottom" constant="-8.5" id="SDI-oV-RIP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ula-m5-9cz" secondAttribute="trailing" constant="-8" id="TAo-by-zrM"/>
+                    <constraint firstItem="Ula-m5-9cz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="j1r-MP-CYR"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="imageNews" destination="Iwa-Bh-3r2" id="tsl-Ir-ZXB"/>
+                <outlet property="collectionViewImages" destination="Ula-m5-9cz" id="8ED-D6-nHN"/>
             </connections>
             <point key="canvasLocation" x="-74" y="79"/>
         </tableViewCell>

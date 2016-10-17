@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "CollectionView.h"
 
+@interface ImageTableViewCell : UITableViewCell 
 
-@interface ImageTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *imageNews;
+@property (weak, nonatomic) IBOutlet CollectionView *collectionViewImages;
+ 
 
 @end
