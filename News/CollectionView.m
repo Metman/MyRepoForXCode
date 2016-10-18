@@ -10,33 +10,71 @@
 
 @implementation CollectionView
 
-
-- (id)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame: frame];
-    if(self){
-        
-        self.delegate = self;
-        self.dataSource = self;
-        
-        [self setItemNewsCell:_itemNewsCell];
-        
-//        NSString *cellClassId = NSStringFromClass([MyCollectionViewCell class]);
-//    
-//        [self registerClass:([MyCollectionViewCell class]) forCellWithReuseIdentifier:cellClassId];
-        
-        NSString *nibName = NSStringFromClass([MyCollectionViewCell class]);
-        
-        UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-        
-        [self registerNib:nib forCellWithReuseIdentifier:nibName];
-        
-    
-        [self reloadData];
-        NSLog(@"CollectionViewLoad");
+-(instancetype)init {
+    self = [super init];
+    if(self) {
+        [self initCollView];
     
     
     }
     return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame: frame];
+    if(self){
+        
+        [self initCollView];
+    
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout{
+    self = [super initWithFrame: frame collectionViewLayout:layout];
+    if(self){
+        
+        [self initCollView];
+        
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if(self){
+        
+        [self initCollView];
+        
+    }
+    return self;
+}
+
+-(void)initCollView {
+
+
+    self.delegate = self;
+    self.dataSource = self;
+    
+    [self setItemNewsCell:_itemNewsCell];
+    
+    //        NSString *cellClassId = NSStringFromClass([MyCollectionViewCell class]);
+    //
+    //        [self registerClass:([MyCollectionViewCell class]) forCellWithReuseIdentifier:cellClassId];
+    
+    NSString *nibName = NSStringFromClass([MyCollectionViewCell class]);
+    
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+    
+    [self registerNib:nib forCellWithReuseIdentifier:nibName];
+    
+    
+    [self reloadData];
+    NSLog(@"CollectionViewLoad");
+
+
+
+
 }
 
 #pragma mark - CollectionView data source
@@ -49,7 +87,7 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return 1;
+    return [_itemNewsCell.arrayWithImagesURL count];
     
 }
 
@@ -65,7 +103,7 @@
         cell = [MyCollectionViewCell new];
     
     }
-    [cell.imageViewCell setImageWithURL:_itemNewsCell.arrayWithImagesURL[1]];
+    [cell.imageViewCell setImageWithURL:_itemNewsCell.arrayWithImagesURL[indexPath.row]];
         // Configure the cell
     
     return cell;

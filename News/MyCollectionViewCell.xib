@@ -9,13 +9,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="101"/>
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="200" height="101"/>
+                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j92-LI-EmD"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j92-LI-EmD">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="2bV-nT-pBv"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
@@ -24,11 +28,11 @@
                 <constraint firstAttribute="bottom" secondItem="j92-LI-EmD" secondAttribute="bottom" id="bqX-FJ-seq"/>
                 <constraint firstItem="j92-LI-EmD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j21-AU-aFG"/>
             </constraints>
-            <size key="customSize" width="200" height="101"/>
+            <size key="customSize" width="299" height="203"/>
             <connections>
                 <outlet property="imageViewCell" destination="j92-LI-EmD" id="idF-g1-ddN"/>
             </connections>
-            <point key="canvasLocation" x="109" y="79.5"/>
+            <point key="canvasLocation" x="33.5" y="146.5"/>
         </collectionViewCell>
     </objects>
 </document>
