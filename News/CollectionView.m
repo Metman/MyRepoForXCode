@@ -20,16 +20,16 @@
         
         [self setItemNewsCell:_itemNewsCell];
         
-        NSString *cellClassId = NSStringFromClass([MyCollectionViewCell class]);
-    
-        [self registerClass:([MyCollectionViewCell class]) forCellWithReuseIdentifier:cellClassId];
+//        NSString *cellClassId = NSStringFromClass([MyCollectionViewCell class]);
+//    
+//        [self registerClass:([MyCollectionViewCell class]) forCellWithReuseIdentifier:cellClassId];
         
-//        NSString *nibName = NSStringFromClass([MyCollectionViewCell class]);
-//        
-//        UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-//        
-//        [self registerNib:nib forCellWithReuseIdentifier:nibName];
-//        
+        NSString *nibName = NSStringFromClass([MyCollectionViewCell class]);
+        
+        UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+        
+        [self registerNib:nib forCellWithReuseIdentifier:nibName];
+        
     
         [self reloadData];
         NSLog(@"CollectionViewLoad");
