@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NewsItem.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface MyCollectionViewCell : UICollectionViewCell

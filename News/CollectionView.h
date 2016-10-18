@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsItem.h"
 #import "MyCollectionViewCell.h"
 
 @interface CollectionView : UICollectionView <UICollectionViewDataSource, UICollectionViewDelegate>

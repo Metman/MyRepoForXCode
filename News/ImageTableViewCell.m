@@ -10,17 +10,17 @@
 
 @implementation ImageTableViewCell
 
--(instancetype)init {
-    self = [super init];
-    if(self){
-    
-    
-    
-    
-    
-    }return self;
-
-}
+//-(instancetype)init {
+//    self = [super init];
+//    if(self){
+//    
+//    
+//    
+//    
+//    
+//    }return self;
+//
+//}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

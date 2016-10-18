@@ -77,7 +77,7 @@
     
         ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableCellWithImage forIndexPath:indexPath];
        
-        cell.collectionViewImages.itemNewsCell = _newsItemDetail.arrayWithImagesURL[indexPath.row];
+        cell.collectionViewImages.itemNewsCell = _newsItemDetail;
         
         
         return cell;

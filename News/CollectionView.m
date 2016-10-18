@@ -11,10 +11,10 @@
 @implementation CollectionView
 
 
-- (instancetype)init{
-    self = [super init];
+- (id)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame: frame];
     if(self){
-    
+        
         self.delegate = self;
         self.dataSource = self;
         
