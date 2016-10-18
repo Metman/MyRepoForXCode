@@ -67,6 +67,7 @@
                                                                     forIndexPath:indexPath];
         
         [cell.titleNews setText:_newsItemDetail.title];
+        [cell.titleNews setFont: [UIFont systemFontOfSize:20]];
     
         return cell;
 

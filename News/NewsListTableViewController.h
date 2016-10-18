@@ -14,6 +14,8 @@
 
 @interface NewsListTableViewController : UITableViewController
 
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property(nonatomic,strong) NewsListDataSource *newsListDatasourceDelegate;
 
 @end

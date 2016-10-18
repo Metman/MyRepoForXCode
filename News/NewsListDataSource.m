@@ -56,10 +56,10 @@
             newsItem.date = @"27.9.16, 10:00";
             
             NSURL *imageURL = [NSURL URLWithString:
-                               @"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
+                              @"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg" ];
             
             NSURL *otherImageURL = [NSURL URLWithString:
-                                    @"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg"];
+                                    @"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
             
             newsItem.arrayWithImagesURL = [NSMutableArray arrayWithObjects:imageURL,otherImageURL, nil];
 
@@ -76,12 +76,14 @@
             newsItem.imageURL = [NSURL URLWithString:@"https://pp.vk.me/c636021/v636021281/2f8bf/YRldZxMSRUo.jpg"];
             
             NSURL *imageURL = [NSURL URLWithString:
-                               @"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
+                               @"https://pp.vk.me/c636021/v636021281/2f8bf/YRldZxMSRUo.jpg"];
             
             NSURL *otherImageURL = [NSURL URLWithString:
-                                    @"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg"];
+                                    @"https://pp.vk.me/c604323/v604323645/2ce4c/pT7aubJAy3g.jpg"];
             
-            newsItem.arrayWithImagesURL = [NSMutableArray arrayWithObjects:imageURL,otherImageURL, nil];
+            NSURL *elseImageURL = [NSURL URLWithString:@"https://pp.vk.me/c638019/v638019052/2177/RTXV8Lc2tkE.jpg"];
+            
+            newsItem.arrayWithImagesURL = [NSMutableArray arrayWithObjects:imageURL,otherImageURL, elseImageURL, nil];
 
             [_newsItemArray addObject:newsItem];
         }
@@ -96,10 +98,10 @@
             newsItem.imageURL = [NSURL URLWithString:@"https://pp.vk.me/c637217/v637217813/11eb7/0mhstEDvkPk.jpg"];
             
             NSURL *imageURL = [NSURL URLWithString:
-                               @"https://pp.vk.me/c637331/v637331414/11058/Vibr4RxITTU.jpg"];
+                               @"https://pp.vk.me/c637217/v637217813/11eb7/0mhstEDvkPk.jpg"];
             
             NSURL *otherImageURL = [NSURL URLWithString:
-                                    @"https://pp.vk.me/c637930/v637930269/1463a/IMc2KmvFWOY.jpg"];
+                                    @"https://pp.vk.me/c636425/v636425371/3cae1/HccKJ9UxTJ0.jpg"];
             
             newsItem.arrayWithImagesURL = [NSMutableArray arrayWithObjects:imageURL,otherImageURL, nil];
 

@@ -17,17 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initTableView];
+//    [self initTableView];
     
-    _newsListDatasourceDelegate = [NewsListDataSource new];
-    self.tableView.delegate = _newsListDatasourceDelegate;
-    self.tableView.dataSource = _newsListDatasourceDelegate;
-    _newsListDatasourceDelegate.otherVC = self;
-    
-    NSString *nibName = NSStringFromClass([NewsListTableViewCell class]);
-    
-    UINib *cellNib = [UINib nibWithNibName:nibName bundle:nil];
-    
-    [self.tableView registerNib: cellNib forCellReuseIdentifier:nibName];
+   
         // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -41,6 +34,49 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)initTableView {
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        _newsListDatasourceDelegate = [NewsListDataSource new];
+        self.tableView.delegate = _newsListDatasourceDelegate;
+        self.tableView.dataSource = _newsListDatasourceDelegate;
+        _newsListDatasourceDelegate.otherVC = self;
+        
+        NSString *nibName = NSStringFromClass([NewsListTableViewCell class]);
+        
+        UINib *cellNib = [UINib nibWithNibName:nibName bundle:nil];
+        
+        [self.tableView registerNib: cellNib forCellReuseIdentifier:nibName];
+ 
+        [self.tableView reloadData];
+        [self removeSpinnerWithView];
+        
+    });
+    
+
+}
+
+-(void)showSpinner {
+    
+    
+    [_spinner startAnimating];
+//    _spinner.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+    
+    [self.view addSubview:_spinner];
+    
+
+
+}
+
+-(void)removeSpinnerWithView {
+
+    
+    [_spinner stopAnimating];
+    
+    
+
+}
 
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
