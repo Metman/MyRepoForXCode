@@ -79,6 +79,19 @@
 
 #pragma mark - CollectionView data source
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+
+    CGSize size;
+    size.width = self.bounds.size.width;
+    size.height = 200;
+    
+    
+    
+    return size;
+};
+
+
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
     return 1;

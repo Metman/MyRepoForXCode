@@ -10,7 +10,7 @@
 #import "NewsItem.h"
 #import "MyCollectionViewCell.h"
 
-@interface CollectionView : UICollectionView <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface CollectionView : UICollectionView <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic,strong) NewsItem *itemNewsCell;
 
