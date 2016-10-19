@@ -41,7 +41,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4gU-4t-ApA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94318953804347827" green="0.94318953804347827" blue="0.94318953804347827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <outlet property="dataSource" destination="QKY-TM-To1" id="u6K-cW-HOn"/>
                             <outlet property="delegate" destination="QKY-TM-To1" id="io6-dw-HCM"/>
@@ -57,10 +57,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EO0-Wf-v17" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="5Oi-bB-BOR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5Oi-bB-BOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.89315658807754517" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="0.56324196927374304" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

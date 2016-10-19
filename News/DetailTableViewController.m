@@ -25,6 +25,8 @@
     self.tableView.estimatedRowHeight = 44;
     
     
+    
+    
     NSString *nibName = NSStringFromClass([DetailTableViewCell class]);
     UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
     
@@ -67,8 +69,10 @@
                                                                     forIndexPath:indexPath];
         
         [cell.titleNews setText:_newsItemDetail.title];
-        [cell.titleNews setFont: [UIFont systemFontOfSize:20]];
-    
+        [cell.titleNews setFont: [UIFont boldSystemFontOfSize:20]];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        [cell setBackgroundColor:[UIColor clearColor]];
+        
         return cell;
 
     }
@@ -79,6 +83,7 @@
         ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableCellWithImage forIndexPath:indexPath];
        
         cell.collectionViewImages.itemNewsCell = _newsItemDetail;
+        
         
         
         return cell;
@@ -92,6 +97,9 @@
                                                                     forIndexPath:indexPath];
         
         [cell.titleNews setText:_newsItemDetail.text];
+        [cell.titleNews setFont:[UIFont systemFontOfSize:18]];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        [cell setBackgroundColor:[UIColor clearColor]];
         
         return cell;
         
@@ -103,6 +111,11 @@
                                                                     forIndexPath:indexPath];
         
         [cell.titleNews setText:_newsItemDetail.date];
+        [cell.titleNews setTextAlignment: NSTextAlignmentRight];
+        [cell.titleNews setFont:[UIFont systemFontOfSize:14]];
+        [cell.titleNews setTextColor:[UIColor blueColor]];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        [cell setBackgroundColor:[UIColor clearColor]];
     
         return cell;
 
