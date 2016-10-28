@@ -118,6 +118,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
+        for(int i = 0; i < 5000; i++){
+        NSLog(@"%d", i);
+    };
+    
+    });
+    
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main"
                                                           bundle:nil];
     

@@ -102,31 +102,13 @@
 			children = (
 				00602A8A1D92B95B0023BE9A /* AppDelegate.h */,
 				00602A8B1D92B95B0023BE9A /* AppDelegate.m */,
-				00959BB31D93E6F4001B1391 /* NewsItem.h */,
-				00959BB41D93E6F4001B1391 /* NewsItem.m */,
-				9CA0F0F81D9C32A3006F3C27 /* NewsListTableViewController.h */,
-				9CA0F0F91D9C32A3006F3C27 /* NewsListTableViewController.m */,
-				00F839241D941FE00000707D /* NewsListDataSource.h */,
-				00F839251D941FE00000707D /* NewsListDataSource.m */,
-				003F386E1D94359800D593BD /* NewsListTableViewCell.h */,
-				003F386F1D94359800D593BD /* NewsListTableViewCell.m */,
-				003F38701D94359800D593BD /* NewsListTableViewCell.xib */,
-				00051B341DAD61C70015F237 /* DetailTableViewController.h */,
-				00051B351DAD61C70015F237 /* DetailTableViewController.m */,
-				00051B371DAD68B90015F237 /* DetailTableViewCell.h */,
-				00051B381DAD68B90015F237 /* DetailTableViewCell.m */,
-				000694541DAD716B00ECA020 /* DetailTableViewCell.xib */,
-				0095D70A1DB120D7005FD78C /* ImageTableViewCell.h */,
-				0095D70B1DB120D7005FD78C /* ImageTableViewCell.m */,
-				0095D70C1DB120D7005FD78C /* ImageTableViewCell.xib */,
-				00493C5C1DB2B46B004DF474 /* CollectionView.h */,
-				00493C5D1DB2B46B004DF474 /* CollectionView.m */,
-				00493C641DB2B5F3004DF474 /* MyCollectionViewCell.h */,
-				00493C651DB2B5F3004DF474 /* MyCollectionViewCell.m */,
-				00493C661DB2B5F3004DF474 /* MyCollectionViewCell.xib */,
+				00855F081DC2879C007BA3EB /* Objects */,
+				00855F071DC28789007BA3EB /* Controllers */,
+				00855F091DC2882D007BA3EB /* Model */,
+				00855F0A1DC28864007BA3EB /* MainControllerCell */,
+				00855F0B1DC288AC007BA3EB /* DetailViewCells */,
 				00602A901D92B95B0023BE9A /* Main.storyboard */,
-				00A2F0171DB68DE90083CCD7 /* NewsAPI.h */,
-				00A2F0181DB68DE90083CCD7 /* NewsAPI.m */,
+				00855F0C1DC288C4007BA3EB /* NewsAPI */,
 				00602A931D92B95B0023BE9A /* Assets.xcassets */,
 				00602A951D92B95B0023BE9A /* LaunchScreen.storyboard */,
 				00602A981D92B95B0023BE9A /* Info.plist */,
@@ -141,6 +123,72 @@
 				00602A881D92B95B0023BE9A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00855F071DC28789007BA3EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0F0F81D9C32A3006F3C27 /* NewsListTableViewController.h */,
+				9CA0F0F91D9C32A3006F3C27 /* NewsListTableViewController.m */,
+				00051B341DAD61C70015F237 /* DetailTableViewController.h */,
+				00051B351DAD61C70015F237 /* DetailTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		00855F081DC2879C007BA3EB /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				00959BB31D93E6F4001B1391 /* NewsItem.h */,
+				00959BB41D93E6F4001B1391 /* NewsItem.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		00855F091DC2882D007BA3EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00F839241D941FE00000707D /* NewsListDataSource.h */,
+				00F839251D941FE00000707D /* NewsListDataSource.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		00855F0A1DC28864007BA3EB /* MainControllerCell */ = {
+			isa = PBXGroup;
+			children = (
+				003F386E1D94359800D593BD /* NewsListTableViewCell.h */,
+				003F386F1D94359800D593BD /* NewsListTableViewCell.m */,
+				003F38701D94359800D593BD /* NewsListTableViewCell.xib */,
+			);
+			name = MainControllerCell;
+			sourceTree = "<group>";
+		};
+		00855F0B1DC288AC007BA3EB /* DetailViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				00051B371DAD68B90015F237 /* DetailTableViewCell.h */,
+				00051B381DAD68B90015F237 /* DetailTableViewCell.m */,
+				000694541DAD716B00ECA020 /* DetailTableViewCell.xib */,
+				0095D70A1DB120D7005FD78C /* ImageTableViewCell.h */,
+				0095D70B1DB120D7005FD78C /* ImageTableViewCell.m */,
+				0095D70C1DB120D7005FD78C /* ImageTableViewCell.xib */,
+				00493C5C1DB2B46B004DF474 /* CollectionView.h */,
+				00493C5D1DB2B46B004DF474 /* CollectionView.m */,
+				00493C641DB2B5F3004DF474 /* MyCollectionViewCell.h */,
+				00493C651DB2B5F3004DF474 /* MyCollectionViewCell.m */,
+				00493C661DB2B5F3004DF474 /* MyCollectionViewCell.xib */,
+			);
+			name = DetailViewCells;
+			sourceTree = "<group>";
+		};
+		00855F0C1DC288C4007BA3EB /* NewsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				00A2F0171DB68DE90083CCD7 /* NewsAPI.h */,
+				00A2F0181DB68DE90083CCD7 /* NewsAPI.m */,
+			);
+			name = NewsAPI;
 			sourceTree = "<group>";
 		};
 		B2E1483C0BA5820B1E57F7D7 /* Pods */ = {
